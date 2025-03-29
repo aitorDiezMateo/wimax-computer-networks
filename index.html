@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiMAX</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Calculate scrollbar width and add it as a CSS variable
+        document.documentElement.style.setProperty('--scrollbar-width', 
+            (window.innerWidth - document.documentElement.clientWidth) + 'px');
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Presentation</a></li>
+            <li><a href="video.html">Video</a></li>
+        </ul>
+    </nav>
+    <h1>WiMAX</h1>
+    <h2>Introduction</h2>
+    <p>The advent of WiMAX, an acronym for Worldwide Interoperability for Microwave Access, in the early 2000s marked a significant endeavor to revolutionize wireless communication. This technology emerged with the primary objective of delivering high-speed internet access over extensive distances.  Its fundamental design aimed to serve as a robust wireless alternative to traditional wired broadband services, particularly in regions where the deployment of physical infrastructure presented considerable challenges and costs. The initial focus was heavily directed towards underserved rural areas, where the economic and logistical hurdles of laying down cables were substantial.
+    <br>
+    <br>
+    WiMAX offers coverage of up to 50 km and speeds of up to 75 Mbps. It provides flexible connectivity, working in both Line-of-Sight (LOS) and Non-Line-of-Sight (NLOS) environments, making it ideal for Metropolitan Area Networks (MANs). Line-of-Sight (LOS) is when the signal travels directly between antennas without any obstacles. This allows for higher speeds and longer distances because there is minimal interference. Non-Line-of-Sight (NLOS) is when the signal has to go through, around, or reflect off obstacles like buildings, trees, or terrain. This can cause some loss of speed and range but allows the signal to reach areas where direct visibility isn't possible.</p>
+    <h2>Importance in Networking</h2>
+    <p>WiMAX facilitates the extension of high-speed internet access to remote, rural, and underserved areas, ensuring reliable and fast communication. This advancement enhances digital inclusion, allowing communities to access online services more effectively.
+    <br>
+    <br>
+    WiMAX enables users to maintain network connections while moving between different locations. This ensures continuous service across various networks, providing seamless connectivity for mobile users.
+    <br>
+    <br>
+    The system is designed to expand and adapt easily to increasing demands or changing requirements without the need for significant reconfiguration. This flexibility makes WiMAX a future-proof solution for growing network needs.
+    <br>
+    <br>
+    WiMAX supports Metropolitan Area Network (MAN) applications by providing high-speed data transmission over large areas. These networks connect multiple Local Area Networks (LANs) within the same geographic region and support various services, including internet access.
+    <br>
+    <br>
+    WiMAX ensures seamless interoperability between different systems, allowing for smooth integration and collaboration. Additionally, it supports future technological advancements and network expansion, making it a scalable and sustainable solution.
+    </p>
+
+    <h2>Foundations and Working Principles</h2>
+    <p>The operational framework of WiMAX is built upon the IEEE 802.16 family of standards, which meticulously define the protocols and procedures governing both the physical (PHY) and media access control (MAC) layers of the communication system. The initial groundwork for this standard began in 1998, with the WiMAX Forum subsequently established in 2001 to champion interoperability and facilitate the development of a robust ecosystem. The inaugural IEEE 802.16 standard, released in 2001, primarily targeted the 10–66 GHz frequency spectrum and was designed for fixed, line-of-sight (LOS) applications, mainly serving as a solution for point-to-point wireless links.
+    <br>
+    <br>
+    A significant advancement came with the introduction of IEEE 802.16a (later revised as 802.16-2004), which broadened the standard to include the 2–11 GHz frequency range, thereby enabling non-line-of-sight (NLOS) operation. This amendment laid the foundation for the first generation of WiMAX solutions aimed at fixed broadband access, commonly referred to as Fixed WiMAX. The next pivotal step in the evolution of the standard was the ratification of IEEE 802.16e-2005, known as Mobile WiMAX. This amendment introduced crucial features such as support for mobility through seamless handover between base stations, the implementation of scalable Orthogonal Frequency Division Multiple Access (SOFDMA), the integration of advanced antenna diversity techniques like Multiple Input Multiple Output (MIMO), and enhancements to improve signal penetration in indoor environments. These additions were instrumental in positioning WiMAX as a viable technology for mobile broadband services.
+    <br>
+    <br>
+    To ensure seamless operation and interoperability across different equipment manufacturers, the WiMAX Forum defined specific system profiles, which represent carefully selected subsets of the comprehensive IEEE 802.16 standard. The fixed system profile, based on the IEEE 802.16d-2004 standard, utilizes Orthogonal Frequency Division Multiplexing (OFDM) with a 256-point Fast Fourier Transform (FFT) and was primarily designed for stationary users and point-to-multipoint network architectures. In contrast, the mobility system profile is built upon the IEEE 802.16e-2005 standard and employs scalable OFDMA (SOFDMA) with adaptable FFT sizes. While Fixed WiMAX (802.16d) primarily catered to fixed and nomadic applications, Mobile WiMAX (802.16e) extended its support to encompass fixed, nomadic, portable, and fully mobile scenarios.
+    <br>
+    <br>
+    WiMAX leverages several key technologies to achieve efficient and high-speed wireless transmission. Orthogonal Frequency Division Multiplexing (OFDM) and its multi-user variant, Orthogonal Frequency Division Multiple Access (OFDMA), are central to its operation, particularly in mobile versions. These techniques divide the available radio spectrum into numerous orthogonal subcarriers, allowing for parallel data transmission and mitigating the effects of frequency-selective fading. OFDMA further enhances this by enabling multiple users to simultaneously access network resources by allocating different subcarriers to each user. Additionally, WiMAX incorporates Multiple Input Multiple Output (MIMO) technology by utilizing multiple antennas at both the transmitting base station and the receiving user device, which improves signal coverage, increases data capacity, and enhances resistance to signal fading. Adaptive modulation allows the system to dynamically adjust the modulation scheme and error correction coding based on prevailing channel conditions, while the design supports scalable bandwidths typically ranging from 1.25 MHz to 20 MHz, providing network operators with flexibility to tailor deployments based on available spectrum and capacity requirements. WiMAX also incorporates built-in Quality of Service (QoS) mechanisms to prioritize voice and video traffic, boasting higher spectral efficiency than Wi-Fi and ensuring interoperability between different vendors' equipment.
+    <br>
+    <br>
+    At the Physical Layer (PHY), WiMAX primarily utilizes OFDM and OFDMA, which divide the channel into many orthogonal subcarriers to make the system resilient to multipath interference and allow flexible allocation of bandwidth to multiple users. The introduction of Scalable OFDMA (SOFDMA) in the 802.16e standard further enables the system to adapt the number of subcarriers based on the available channel bandwidth. The system employs adaptive modulation schemes—including BPSK, QPSK, 16-QAM, and 64-QAM—that adjust according to signal quality to balance data rate and robustness. Moreover, advanced antenna techniques such as MIMO and beamforming are incorporated to improve signal quality, range, and throughput. WiMAX is designed to operate in both licensed frequency bands (e.g., 2.3, 2.5, 3.5 GHz) and unlicensed bands (e.g., 5.8 GHz), with channel bandwidths that can flexibly range from 1.25 MHz to 28 MHz, and supports both Time Division Duplexing (TDD) and Frequency Division Duplexing (FDD), with mobile WiMAX primarily utilizing TDD.
+    <br>
+    <br>
+    At the Media Access Control (MAC) Layer, WiMAX operates in a connection-oriented manner, establishing connections between the base station (BS) and subscriber station (SS) before data transfer takes place. This layer is designed with inherent QoS support, enabling the prioritization of various traffic types such as voice, video, and data through mechanisms like Unsolicited Grant Service (UGS) and Real-Time Polling Service (rtPS). A centralized scheduling mechanism is implemented whereby the base station controls both uplink and downlink access for subscriber stations, effectively avoiding collisions common in contention-based systems like Wi-Fi, which relies on CSMA/CA. Security is also a fundamental aspect of the MAC layer, with features including encryption (e.g., AES) and robust authentication protocols. The overall network architecture typically comprises Subscriber Stations (SS) or Mobile Stations (MS), Base Stations (BS), and a core network divided into the Access Service Network (ASN) and Connectivity Service Network (CSN), which together provide IP connectivity and interface with other networks.
+    In certain scenarios, particularly in rural areas, WiMAX has offered a more cost-effective deployment option compared to laying wired infrastructure, making it a flexible and scalable solution for broadband access.
+    </p>
+    <h2>Applications in real-life situations</h2>
+    <p>WiMAX has been widely adopted for various applications, including:</p>
+    <ul>
+    <li>
+        <strong>Public Safety and Emergency Services:</strong> WiMax is implemented in some cities to deliver affordable or free internet access to businesses and residents. It supports wireless connectivity in public spaces such as parks, government buildings, and transit areas.
+    </li>
+    <li>
+        <strong>Public Safety and Emergency Services (Telemedicine):</strong> Another example is its use in telemedicine services in remote areas by supporting fast data transfer for medical imaging and real-time communication via videoconferencing. This can be especially helpful during natural disasters, where it provides quick emergency communication services when basic infrastructure is damaged. In these cases, WiMax is used to establish temporary communication networks.
+    </li>
+    <li>
+        <strong>Fixed Broadband Access:</strong> WiMAX provides high-speed broadband to homes and businesses using Point-to-Multipoint (PMP) topology. It supports both Line-of-Sight (LOS) and Non-Line-of-Sight (NLOS) configurations for reliable connectivity.
+    </li>
+    </ul>
+    <h2>Future of WiMAX</h2>
+    <p> 
+        The peak usage of WiMAX occurred between 2010 and 2011, marked by rapid global expansion and significant coverage claims. However, WiMAX's decline began as telecom operators shifted focus to Long-Term Evolution (LTE) technology. LTE gained dominance due to broader industry support, faster deployment, and integration with evolving 4G standards, which overshadowed WiMAX's niche success. By the mid-2010s, WiMAX's role diminished as LTE became the global standard for high-speed mobile broadband, relegating WiMAX to legacy systems in specific regions.
+        <br>    
+        <br>
+        The future of WiMax is uncertain as newer wireless technologies, such as 4G LTE and 5G, have largely replaced it in many markets. While WiMax was once a promising solution for high-speed broadband access, its adoption has declined due to limited device support and competition from more efficient networks. However, it still finds niche applications in certain industries, such as rural broadband, transportation, and industrial communications. As technology evolves, WiMax may continue to play a role in specialized sectors, but its mainstream use is expected to diminish over time.
+    </p>
+    <h2>References</h2>
+    <ol>
+        <li>EBSCO Research Starters, “WiMAX: Worldwide Interoperability Microwave Access.” Available: 
+            <a href="https://www.ebsco.com/research-starters/communication-and-mass-media/wimax-worldwide-interoperability-microwave-access" target="_blank">
+                https://www.ebsco.com/research-starters/communication-and-mass-media/wimax-worldwide-interoperability-microwave-access
+            </a>.
+        </li>
+        <li>GeeksforGeeks, “WiMax in Computer Network,” <i>GeeksforGeeks</i>, 2024. Available: 
+            <a href="https://www.geeksforgeeks.org/wimax-in-computer-network/" target="_blank">
+                https://www.geeksforgeeks.org/wimax-in-computer-network/
+            </a>.
+        </li>
+        <li>“WiMAX Networking Technologies and Solutions.” Available: 
+            <a href="https://www.zte.com.cn/global/about/magazine/zte-communications/2005/2/en_52/162338.html" target="_blank">
+                https://www.zte.com.cn/global/about/magazine/zte-communications/2005/2/en_52/162338.html
+            </a>.
+        </li>
+        <li>P. Sran, “WiMAX: Its Features and Applications,” <i>ResearchGate</i>, 2009. Available: 
+            <a href="https://www.researchgate.net/publication/281291210_Wimax_Its_Features_and_Applications" target="_blank">
+                https://www.researchgate.net/publication/281291210_Wimax_Its_Features_and_Applications
+            </a>.
+        </li>
+        <li>“WEIRD - Real Use Cases and Applications for the WiMAX Technology.” <i>ResearchGate</i>. Available: 
+            <a href="https://www.researchgate.net/publication/224305513_WEIRD_-_Real_use_cases_and_applications_for_the_WiMAX_technology" target="_blank">
+                https://www.researchgate.net/publication/224305513_WEIRD_-_Real_use_cases_and_applications_for_the_WiMAX_technology
+            </a>.
+        </li>
+        <li>Wikipedia, “WiMAX.” Available: 
+            <a href="https://en.wikipedia.org/wiki/WiMAX" target="_blank">
+                https://en.wikipedia.org/wiki/WiMAX
+            </a>.
+        </li>
+        <li>TeleDynamics, “What’s So Great About WiMAX?” <i>TeleDynamics Blog</i>. Available: 
+            <a href="https://info.teledynamics.com/blog/whats-so-great-about-wimax" target="_blank">
+                https://info.teledynamics.com/blog/whats-so-great-about-wimax
+            </a>.
+        </li>
+        <li>Keysight Technologies, “WiMAX Overview.” Available: 
+            <a href="https://helpfiles.keysight.com/csg/n7615/Content/Main/WiMAX_Overview.htm" target="_blank">
+                https://helpfiles.keysight.com/csg/n7615/Content/Main/WiMAX_Overview.htm
+            </a>.
+        </li>
+        <li>TutorialsWeb, “WiMAX Information.” Available: 
+            <a href="https://www.tutorialsweb.com/wimax-info/wimax-3.htm" target="_blank">
+                https://www.tutorialsweb.com/wimax-info/wimax-3.htm
+            </a>.
+        </li>
+    </ol>
+</body>
+</html>
